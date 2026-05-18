@@ -21,9 +21,17 @@ const features = [
 ];
 
 const collections = [
-  { name: "Everyday Edit", desc: "Effortless pieces for daily glow", seed: "everyday-edit" },
-  { name: "Bridal Essentials", desc: "Heirloom moments, modern soul", seed: "bridal-essentials" },
-  { name: "Statement Pieces", desc: "Bold. Unapologetic. You.", seed: "statement-pieces" },
+  { name: "Everyday Edit", desc: "Effortless pieces for daily glow", img: "photo-1599643478518-a784e5dc4c8f" },
+  { name: "Bridal Essentials", desc: "Heirloom moments, modern soul", img: "photo-1601121141461-9d6647bca1ed" },
+  { name: "Statement Pieces", desc: "Bold. Unapologetic. You.", img: "photo-1611591437281-460bfbe1220a" },
+];
+
+const insta = [
+  "photo-1605100804763-247f67b3557e",
+  "photo-1611652022419-a9419f74343d",
+  "photo-1535632066927-ab7c9ab60908",
+  "photo-1630019852942-f89202989a59",
+  "photo-1573408301185-9146fe634ad0",
 ];
 
 function Home() {
@@ -108,7 +116,7 @@ function Home() {
               className="group relative h-96 overflow-hidden glass hover-lift block"
             >
               <img
-                src={`https://picsum.photos/seed/${c.seed}/800/1000`}
+                src={`https://images.unsplash.com/${c.img}?auto=format&fit=crop&w=800&q=80`}
                 alt={c.name}
                 className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-80 group-hover:scale-105 transition-all duration-700"
               />
@@ -130,11 +138,11 @@ function Home() {
           <h2 className="font-display text-4xl">As Seen On</h2>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-5 gap-3">
-          {[1, 2, 3, 4, 5].map((i) => (
-            <a key={i} href="#" className="aspect-square overflow-hidden glass hover-lift block">
+          {insta.map((id, i) => (
+            <a key={id} href="#" className="aspect-square overflow-hidden glass hover-lift block">
               <img
-                src={`https://picsum.photos/seed/insta-${i}/400/400`}
-                alt={`Adaadi on Instagram ${i}`}
+                src={`https://images.unsplash.com/${id}?auto=format&fit=crop&w=500&q=80`}
+                alt={`Adaadi on Instagram ${i + 1}`}
                 className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
               />
             </a>

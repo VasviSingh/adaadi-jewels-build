@@ -17,19 +17,19 @@ const collections = [
     name: "Everyday Edit",
     tag: "Minimalist · Daily Wear",
     desc: "Featherweight pieces that go from morning chai to midnight calls. Designed to be lived in.",
-    seed: "everyday-hero",
+    img: "photo-1599643478518-a784e5dc4c8f",
   },
   {
     name: "Bridal Essentials",
     tag: "Tradition · Reimagined",
     desc: "Mangalsutras, chokers and sets where ancestral craft meets contemporary form. For the bride who writes her own rituals.",
-    seed: "bridal-hero",
+    img: "photo-1601121141461-9d6647bca1ed",
   },
   {
     name: "Statement Pieces",
     tag: "Bold · Unforgettable",
     desc: "Chunky cuffs, dramatic drops, and ear cuffs that turn rooms into runways.",
-    seed: "statement-hero",
+    img: "photo-1611591437281-460bfbe1220a",
   },
 ];
 
@@ -51,7 +51,7 @@ function Collections() {
           >
             <div className="relative aspect-[4/5] glass overflow-hidden md:[direction:ltr]">
               <img
-                src={`https://picsum.photos/seed/${c.seed}/900/1100`}
+                src={`https://images.unsplash.com/${c.img}?auto=format&fit=crop&w=900&q=80`}
                 alt={c.name}
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
               />
