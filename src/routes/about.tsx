@@ -52,7 +52,7 @@ function About() {
       <section className="max-w-6xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-10 items-center">
         <div className="aspect-[4/5] glass overflow-hidden">
           <img
-            src="https://picsum.photos/seed/founder-adaadi/800/1000"
+            src="https://images.unsplash.com/photo-1617922001439-4a2e6562f328?auto=format&fit=crop&w=800&q=80"
             alt="Founder of Adaadi"
             className="w-full h-full object-cover"
           />
