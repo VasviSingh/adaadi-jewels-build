@@ -73,19 +73,22 @@ export const useShop = create<ShopState>((set) => ({
   logout: () => set({ user: null }),
 }));
 
+const img = (id: string) =>
+  `https://images.unsplash.com/${id}?auto=format&fit=crop&w=700&q=80`;
+
 export const PRODUCTS: Product[] = [
-  { id: "zara-stud", name: "Zara Stud Earrings", price: 799, category: "Earrings", metal: "Gold-plated", image: "https://picsum.photos/seed/zara-stud/600/600" },
-  { id: "meera-layered", name: "Meera Layered Necklace", price: 1499, category: "Necklaces", metal: "Gold-plated", image: "https://picsum.photos/seed/meera-layered/600/600" },
-  { id: "asha-bangles", name: "Asha Bangles Set", price: 1299, category: "Bracelets", metal: "Gold-plated", image: "https://picsum.photos/seed/asha-bangles/600/600" },
-  { id: "riya-ring", name: "Riya Statement Ring", price: 599, category: "Rings", metal: "Silver", image: "https://picsum.photos/seed/riya-ring/600/600" },
-  { id: "priya-anklet", name: "Priya Anklet Duo", price: 899, category: "Anklets", metal: "Silver", image: "https://picsum.photos/seed/priya-anklet/600/600" },
-  { id: "diya-choker", name: "Diya Choker", price: 1999, category: "Necklaces", metal: "Gold-plated", image: "https://picsum.photos/seed/diya-choker/600/600" },
-  { id: "kavya-drop", name: "Kavya Drop Earrings", price: 749, category: "Earrings", metal: "Rose Gold", image: "https://picsum.photos/seed/kavya-drop/600/600" },
-  { id: "leela-charm", name: "Leela Charm Bracelet", price: 1199, category: "Bracelets", metal: "Rose Gold", image: "https://picsum.photos/seed/leela-charm/600/600" },
-  { id: "noor-cuff", name: "Noor Ear Cuff", price: 649, category: "Earrings", metal: "Gold-plated", image: "https://picsum.photos/seed/noor-cuff/600/600" },
-  { id: "saira-hoop", name: "Saira Hoop Earrings", price: 849, category: "Earrings", metal: "Gold-plated", image: "https://picsum.photos/seed/saira-hoop/600/600" },
-  { id: "tara-mangalsutra", name: "Tara Mangalsutra", price: 2499, category: "Sets", metal: "Gold-plated", image: "https://picsum.photos/seed/tara-mangalsutra/600/600" },
-  { id: "ishaan-bracelet", name: "Ishaan Men's Bracelet", price: 999, category: "Bracelets", metal: "Silver", image: "https://picsum.photos/seed/ishaan-bracelet/600/600" },
+  { id: "zara-stud", name: "Zara Stud Earrings", price: 799, category: "Earrings", metal: "Gold-plated", image: img("photo-1605100804763-247f67b3557e") },
+  { id: "meera-layered", name: "Meera Layered Necklace", price: 1499, category: "Necklaces", metal: "Gold-plated", image: img("photo-1599643478518-a784e5dc4c8f") },
+  { id: "asha-bangles", name: "Asha Bangles Set", price: 1299, category: "Bracelets", metal: "Gold-plated", image: img("photo-1611591437281-460bfbe1220a") },
+  { id: "riya-ring", name: "Riya Statement Ring", price: 599, category: "Rings", metal: "Silver", image: img("photo-1605100804763-247f67b3557e") },
+  { id: "priya-anklet", name: "Priya Anklet Duo", price: 899, category: "Anklets", metal: "Silver", image: img("photo-1602173574767-37ac01994b2a") },
+  { id: "diya-choker", name: "Diya Choker", price: 1999, category: "Necklaces", metal: "Gold-plated", image: img("photo-1535632787350-4e68ef0ac584") },
+  { id: "kavya-drop", name: "Kavya Drop Earrings", price: 749, category: "Earrings", metal: "Rose Gold", image: img("photo-1630019852942-f89202989a59") },
+  { id: "leela-charm", name: "Leela Charm Bracelet", price: 1199, category: "Bracelets", metal: "Rose Gold", image: img("photo-1611652022419-a9419f74343d") },
+  { id: "noor-cuff", name: "Noor Ear Cuff", price: 649, category: "Earrings", metal: "Gold-plated", image: img("photo-1535632066927-ab7c9ab60908") },
+  { id: "saira-hoop", name: "Saira Hoop Earrings", price: 849, category: "Earrings", metal: "Gold-plated", image: img("photo-1561172317-f8b39de26c6a") },
+  { id: "tara-mangalsutra", name: "Tara Mangalsutra", price: 2499, category: "Sets", metal: "Gold-plated", image: img("photo-1601121141461-9d6647bca1ed") },
+  { id: "ishaan-bracelet", name: "Ishaan Men's Bracelet", price: 999, category: "Bracelets", metal: "Silver", image: img("photo-1573408301185-9146fe634ad0") },
 ];
 
 export const MOCK_ORDERS = [
