@@ -2,6 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { Search, User, ShoppingBag, Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import { useShop, useUI } from "@/lib/store";
+import logoImg from "@/assets/logo.jpeg";
 
 const links = [
   { to: "/", label: "Home" },
@@ -34,16 +35,12 @@ export function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-10 py-4 flex items-center justify-between gap-6">
-        <Link to="/" className="flex items-center gap-2 group">
-          <span className="text-gold text-xl">◇</span>
-          <div className="leading-none">
-            <div className="font-display text-2xl tracking-wider text-foreground">
-              Adaadi
-            </div>
-            <div className="text-[10px] tracking-[0.3em] text-gold uppercase">
-              Fine Jewels
-            </div>
-          </div>
+        <Link to="/" className="flex items-center group">
+          <img
+            src={logoImg}
+            alt="Adaadi Fine Jewels"
+            className="h-14 w-auto object-contain"
+          />
         </Link>
 
         <nav className="hidden md:flex items-center gap-10">
